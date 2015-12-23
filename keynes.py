@@ -22,12 +22,10 @@ labels = data[:,data.shape[1] - 1]
 #classifier = GaussianNB()
 classifier = LogisticRegression()
 
-'''print "Selecting features."
+print "Selecting features."
 
 rfe = RFE(estimator = classifier, step = 1)
 rfe.fit(values, labels)
-print("Optimal number of features : %d" % rfe.n_features_)
-print rfe.support_
 
 removed = 0
 for i in range(len(rfe.support_)):
@@ -35,7 +33,7 @@ for i in range(len(rfe.support_)):
         values = numpy.delete(values, i - removed, 1)
         removed += 1
 
-print "Training classifier."'''
+print "Training classifier."
 
 classifier.fit(values, labels)
 

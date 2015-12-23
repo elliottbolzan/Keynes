@@ -69,7 +69,7 @@ if not os.path.isfile(directory + "/parsed.csv"):
 
     print "Creating features."
 
-    input = open(directory + "/EURUSD_hour.csv", 'rt')
+    input = open(directory + "/data/EURUSD_hour.csv", 'rt')
     try:
         reader = csv.reader(input)
         for row in reader:
