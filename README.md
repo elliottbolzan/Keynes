@@ -44,7 +44,7 @@ Features from the second paper:
 
 - [ ] Data concerning other instruments and markets
 - [ ] Better feature selection
-- [ ] Betting strategy
+- [ ] Betting simulation and strategy
 
 ## Current Accuracy
 
