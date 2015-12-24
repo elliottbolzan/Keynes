@@ -15,7 +15,7 @@ Most of Keynes's implementation is based on two papers:
 
 ## Data
 
-Keynes makes use of [hourly data](http://www.fxhistoricaldata.com). One month of EUR/USD data is included in the project, in CSV format. 
+Keynes makes use of [hourly data](http://www.fxhistoricaldata.com). Fourteen years of EUR/USD data is included in the project, in CSV format. 
 
 ## Organization
 
