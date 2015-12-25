@@ -15,18 +15,14 @@ Most of Keynes's implementation is based on two papers:
 
 ## Data
 
-<<<<<<< HEAD
 Keynes makes use of [hourly data](http://www.fxhistoricaldata.com).
-=======
-Keynes makes use of [hourly data](http://www.fxhistoricaldata.com). Fourteen years of EUR/USD data is included in the project, in CSV format. 
->>>>>>> origin/master
 
 ## Organization
 
 Currently, Keynes can be run by calling `python keynes.py`.
 This script will call *retrieve_data.py*, which downloads historical forex data if necessary, and *parse_data.py*, which is in charge of creating the features for the Logistic Regression model.
 
-Running Keynes, at this point, will output the model's accuracy and the estimated profit it could generate using a basic betting strategy.
+Running Keynes, at this point, will output the model's accuracy and the estimated profit it would generate using a basic betting strategy.
 
 ## Features
 
@@ -45,20 +41,14 @@ Technical Analysis features:
 
 Ideas from the second paper:
 
-<<<<<<< HEAD
 - [ ] Include data concerning other instruments and markets
 - [ ] Cleaner and more accurate feature selection
 - [ ] Develop a better betting strategy
-=======
-- [ ] Data concerning other instruments and markets
-- [ ] Better feature selection
-- [ ] Betting simulation and strategy
->>>>>>> origin/master
 
 ## Current Accuracy
 
 Currently, using the Logistic Regression model, Keynes's accuracy is `53.44%`.
 
-This may seem unreasonnably low. The second paper, however, comes to similar conclusions: it is difficult to obtain accuracy superior to 0.53 when only using Technical Analysis features.
+This may seem unreasonnably low. The second paper, however, comes to similar conclusions: it is difficult to obtain accuracy superior to 0.54 when only using Technical Analysis features.
 I expect Keynes will perform significantly better once features unrelated to the EUR/USD forex pair are integrated.
 
