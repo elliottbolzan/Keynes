@@ -1,7 +1,7 @@
 # Keynes
 
 Keynes strives to predict foreign exchange trends through the use of machine learning techniques.
-The project is still in its infancy: while the model is more accurate in its predictions than a coin toss, it is unlikely that it could generate a profit.
+The project is still in its infancy: while the model is more accurate in its predictions than a coin toss, the profit it would generate, if any, would be very small.
 
 Keynes is implemented in Python, and make use of both numpy and the [scikit-learn](https://github.com/scikit-learn/scikit-learn) module.
 
@@ -15,19 +15,18 @@ Most of Keynes's implementation is based on two papers:
 
 ## Data
 
-Keynes makes use of [hourly data](http://www.fxhistoricaldata.com). One month of EUR/USD data is included in the project, in CSV format. 
+Keynes makes use of [hourly data](http://www.fxhistoricaldata.com).
 
 ## Organization
 
 Currently, Keynes can be run by calling `python keynes.py`.
-This script will call parse.py, which is in charge of creating the features for the Logistic Regression model.
-The features are only generated if the parsed.csv file does **not** exist; to regenerate the features, the parsed.csv file must be deleted.
+This script will call *retrieve_data.py*, which downloads historical forex data if necessary, and *parse_data.py*, which is in charge of creating the features for the Logistic Regression model.
 
-At this point, running Keynes will simply output the model's accuracy.
+Running Keynes, at this point, will output the model's accuracy and the estimated profit it could generate using a basic betting strategy.
 
 ## Features
 
-Technical Analysis features (from the first paper:)
+Technical Analysis features:
 
 - [x] Stochastic Oscillator
 - [x] Momentum
@@ -40,15 +39,15 @@ Technical Analysis features (from the first paper:)
 - [ ] Bollinger Bands
 - [ ] Heiken-Ashi candles indicator
 
-Features from the second paper:
+Ideas from the second paper:
 
-- [ ] Data concerning other instruments and markets
-- [ ] Better feature selection
-- [ ] Betting strategy
+- [ ] Include data concerning other instruments and markets
+- [ ] Cleaner and more accurate feature selection
+- [ ] Develop a better betting strategy
 
 ## Current Accuracy
 
-Currently, using the Logistic Regression model, Keynes's accuracy is `0.53 (+/- 0.01)`.
+Currently, using the Logistic Regression model, Keynes's accuracy is `53.44%`.
 
 This may seem unreasonnably low. The second paper, however, comes to similar conclusions: it is difficult to obtain accuracy superior to 0.53 when only using Technical Analysis features.
 I expect Keynes will perform significantly better once features unrelated to the EUR/USD forex pair are integrated.
