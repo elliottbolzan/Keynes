@@ -43,6 +43,7 @@ Ideas from the second paper:
 
 - [ ] Include data concerning other instruments and markets
 - [ ] Cleaner and more accurate feature selection
+- [x] Develop a trading simulation
 - [ ] Develop a better betting strategy
 
 ## Current Accuracy
