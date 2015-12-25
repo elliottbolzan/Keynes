@@ -15,7 +15,11 @@ Most of Keynes's implementation is based on two papers:
 
 ## Data
 
+<<<<<<< HEAD
 Keynes makes use of [hourly data](http://www.fxhistoricaldata.com).
+=======
+Keynes makes use of [hourly data](http://www.fxhistoricaldata.com). Fourteen years of EUR/USD data is included in the project, in CSV format. 
+>>>>>>> origin/master
 
 ## Organization
 
@@ -41,9 +45,15 @@ Technical Analysis features:
 
 Ideas from the second paper:
 
+<<<<<<< HEAD
 - [ ] Include data concerning other instruments and markets
 - [ ] Cleaner and more accurate feature selection
 - [ ] Develop a better betting strategy
+=======
+- [ ] Data concerning other instruments and markets
+- [ ] Better feature selection
+- [ ] Betting simulation and strategy
+>>>>>>> origin/master
 
 ## Current Accuracy
 
