@@ -48,7 +48,7 @@ Ideas from the second paper:
 
 ## Current Accuracy
 
-Currently, using the Logistic Regression model, Keynes's accuracy is `53.44%`.
+Currently, using the Logistic Regression model, Keynes's accuracy is `54.07%`.
 
 This may seem unreasonnably low. The second paper, however, comes to similar conclusions: it is difficult to obtain accuracy superior to 0.54 when only using Technical Analysis features.
 I expect Keynes will perform significantly better once features unrelated to the EUR/USD forex pair are integrated.
